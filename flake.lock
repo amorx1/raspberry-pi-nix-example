@@ -53,19 +53,11 @@
     },
     "nixpkgs": {
       "locked": {
-<<<<<<< HEAD
-        "lastModified": 1715542476,
-        "narHash": "sha256-FF593AtlzQqa8JpzrXyRws4CeKbc5W86o8tHt4nRfIg=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "44072e24566c5bcc0b7aa9178a0104f4cfffab19",
-=======
         "lastModified": 1715668745,
         "narHash": "sha256-xp62OkRkbUDNUc6VSqH02jB0FbOS+MsfMb7wL1RJOfA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
         "rev": "9ddcaffecdf098822d944d4147dd8da30b4e6843",
->>>>>>> 6b71b4d (init)
         "type": "github"
       },
       "original": {
@@ -104,19 +96,11 @@
         "u-boot-src": "u-boot-src"
       },
       "locked": {
-<<<<<<< HEAD
-        "lastModified": 1715724643,
-        "narHash": "sha256-iy0bnQUm19rTY3LQLDilhJ1xyddtZk4gNHFtnxYQTvk=",
-        "owner": "tstat",
-        "repo": "raspberry-pi-nix",
-        "rev": "cf9500ba4cd917dd225328dc8fa9b126ddc2c95e",
-=======
         "lastModified": 1715838038,
         "narHash": "sha256-4GidB3XsXvQ0FasIOu7dAyF8VRP/1lHIZlqHdYZ4A58=",
         "owner": "amorx1",
         "repo": "raspberry-pi-nix",
         "rev": "738c80d4c02a234e46302f3452db84d06e91ae59",
->>>>>>> 6b71b4d (init)
         "type": "github"
       },
       "original": {
