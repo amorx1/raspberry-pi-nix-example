@@ -153,6 +153,20 @@
                 programs.zellij = {
                   enable = true;
                   enableZshIntegration = true;
+                  settings = {
+                    theme = "rose-pine";
+                    rose-pine.bg = "#403d52";
+                    rose-pine.fg = "#e0def4";
+                    rose-pine.red = "#eb6f92";
+                    rose-pine.green = "#31748f";
+                    rose-pine.blue = "#9ccfd8";
+                    rose-pine.yellow = "#f6c177";
+                    rose-pine.magenta = "#c4a7e7";
+                    rose-pine.orange = "#fe640b";
+                    rose-pine.cyan = "#ebbcba";
+                    rose-pine.black = "#26233a";
+                    rose-pine.white = "#e0def4";
+                  };
                 };
 
                 # Zoxide
