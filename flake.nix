@@ -115,11 +115,63 @@
                   pkgs.nushell
                   pkgs.git
                   pkgs.jq
+
+                  # LSPs
+                  pkgs.rust-analyzer
+                  pkgs.nil
+                  pkgs.nixpkgs-fmt
                 ];
 
                 programs.home-manager.enable = true;
-                pkgs.jq.enable = true;
-                pkgs.neofetch.enable = true;
+                programs.jq.enable = true;
+
+                # Helix
+                programs.helix = {
+                  enable = true;
+                  defaultEditor = true;
+                  extraPackages = with pkgs; [
+                    rust-analyzer
+                    nil
+                    nixpkgs-fmt
+                  ];
+                  languages = {
+                    language-server.rust-analyzer.config.check = {
+                      command = "clippy";
+                    };
+
+                    language = [
+                      {
+                        name = "rust";
+                        auto-format = true;
+                        language-servers = [
+                          { name = "rust-analyzer"; }
+                        ];
+                      }
+                      {
+                        name = "nix";
+                        formatter = {
+                          command = "nixpkgs-fmt";
+                        };
+                      }
+                    ];
+                  };
+                  settings = {
+                    theme = "dark_plus";
+                    editor = {
+                      line-number = "relative";
+                      lsp.display-messages = true;
+                    };
+                    keys.normal = {
+                      space.space = "file_picker";
+                      space.W = "rotate_view";
+                      space.V = "vsplit";
+                      space.H = "hsplit";
+                      space.w = ":w";
+                      space.q = ":q";
+                      esc = [ "collapse_selection" "keep_primary_selection" ];
+                    };
+                  };
+                };
 
                 # Zsh
                 programs.zsh = {
